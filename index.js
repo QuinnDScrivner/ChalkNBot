@@ -37,5 +37,13 @@ client.on("messageCreate", (message) => {
         message.channel.send("Hi, How are ya?");
     case "Pikachu":
         message.channel.send("I CHOOSE YOU");
+                case 'info':
+            if (args[1] == 'version') {
+                message.channel.send("version 1.0")
+            } else { message.channel.send("ivnaid args") }
+            break;
+        case 'avatar':
+            message.reply(message.author.displayAvatarURL());
+            break;
   }
 });
